@@ -1,4 +1,4 @@
 -- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS projectX;
+DROP DATABASE IF EXISTS maze_runner;
 -- Creates the "blogger" database --
-CREATE DATABASE projectX;
+CREATE DATABASE maze_runner;
