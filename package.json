@@ -23,6 +23,7 @@
     "handlebars": "^4.7.6",
     "materialize-css": "^1.0.0-rc.2",
     "mysql2": "^2.1.0",
+    "pixi.js": "^5.3.2",
     "sequelize": "^6.3.3"
   },
   "devDependencies": {
