@@ -1,10 +1,20 @@
 {
   "name": "ProjectX",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ayla test",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "pixi.js": "^5.3.2",
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,17 +26,5 @@
   "bugs": {
     "url": "https://github.com/jdavis3333/ProjectX/issues"
   },
-  "homepage": "https://github.com/jdavis3333/ProjectX#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "handlebars": "^4.7.6",
-    "materialize-css": "^1.0.0-rc.2",
-    "mysql2": "^2.1.0",
-    "pixi.js": "^5.3.2",
-    "sequelize": "^6.3.3"
-  },
-  "devDependencies": {
-    "ember-cli-materialize": "^0.22.0"
-  }
+  "homepage": "https://github.com/jdavis3333/ProjectX#readme"
 }
