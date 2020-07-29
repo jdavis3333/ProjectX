@@ -47,25 +47,25 @@ Then open in your preferred text editor:
 
 
 ## Authors 
-- [Mai Banh](https://github.com/mtbanh)
+### [Mai Banh](https://github.com/mtbanh)
 - [LinkedIn]( )
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: 
 
-- [Ernie Urzua]( )
+### [Ernie Urzua]( )
 - [LinkedIn]( )
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: 
 
-- [Joes Davis](https://github.com/jdavis3333)
+### [Joes Davis](https://github.com/jdavis3333)
 - [LinkedIn]( )
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: jdavis3333@gmail.com
 
-- [Ayla Dillis](https://github.com/ayladillis)
+### [Ayla Dillis](https://github.com/ayladillis)
 - [LinkedIn](https://www.linkedin.com/in/ayladillis/)
 - [Portfolio](https://ayladillis.github.io/ayladillis_portfolio/)
 - [Highlighted-Work](https://ayladillis.github.io/Coding-Bootcamp-Project-1-Zillow-Maps-API-AD/)
