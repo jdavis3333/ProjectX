@@ -32,9 +32,7 @@
 
   .container #txt {
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+
   }
 
 html {
