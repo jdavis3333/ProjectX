@@ -1,7 +1,7 @@
 .container #btn0 {
     position: absolute;
-    top: 40%;
-    left: 75%;
+    top: 35%;
+    left: 22%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -16,8 +16,8 @@
 
   .container #btn1 {
     position: absolute;
-    top: 40%;
-    left: 60%;
+    top: 43%;
+    left: 25%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -30,9 +30,12 @@
     text-align: center;
   }
 
-  .container #txt {
-    color: white;
-
+  #txt {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    color: whitesmoke;
+    font-size: x-large;
   }
 
 html {
