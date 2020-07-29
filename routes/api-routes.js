@@ -24,3 +24,29 @@ app.post("api/stories", function(req, res) {
     });
 });
 
+
+//Post route for signing up a user
+app.post("/api/signup", function(req, res) {
+    db.User.create({
+      email: req.body.email,
+      password: req.body.password
+    })
+      .then(function() {
+        res.redirect(307, "/api/login");
+      })
+      .catch(function(err) {
+        res.status(401).json(err);
+      });
+  });
+
+
+// Route for logging user out, then sends user back to the sign up screen
+app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+});
+
+//Route for user login
+app.post("/api/login", ... , function(req, res) {
+    res.json(req.user);
+});

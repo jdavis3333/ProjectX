@@ -8,6 +8,25 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+// Route to login screen
+
+app.get("/login", function(req, res) {
+    if (req.user){
+        res.redirect("/");
+    }
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+})
+
+// Route to sign up screen
+
+app.get("/signup", function(req, res) {
+    if(req.res) {
+        res.redirect("/")
+    }
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
+})
+
+
 // Route to Story 2
 app.get("/story_id_2", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/story_id_2.html"))
