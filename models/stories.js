@@ -1,10 +1,12 @@
 module.exports = (sequelize, DataTypes) => {
     var Stories = sequelize.define("Stories", {
-        story_id: DataTypes.INTEGER,
+        story_id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+        },
         story_value: DataTypes.TEXT,
-        root_story: DataTypes.boolean,
-        timestamps: false
-    });
+        root_story: DataTypes.BOOLEAN
+    }, {timestamps: false});
 
     Stories.associate = (models) =>{
         Stories.hasMany(models.Choices, {

@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/jdavis3333/ProjectX/issues"
   },
-  "homepage": "https://github.com/jdavis3333/ProjectX#readme"
+  "homepage": "https://github.com/jdavis3333/ProjectX#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3",
+    "sequelize-fixtures": "^1.2.0"
+  }
 }
