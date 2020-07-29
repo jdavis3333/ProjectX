@@ -53,8 +53,8 @@ Then open in your preferred text editor:
 - [Highlighted-Work]( )
 - email: 
 
-### [Ernie Urzua]( )
-- [LinkedIn]( )
+### [Ernie Urzua](https://github.com/ErnestUrzua)
+- [LinkedIn]()
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: 
