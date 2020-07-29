@@ -1,4 +1,5 @@
 /* special font for vaporwave asthetic */
-p {
+html {
     font-family: 'Arya', sans-serif;
-}
+    color: ghostwhite;
+  }
