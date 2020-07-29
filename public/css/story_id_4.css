@@ -1,0 +1,40 @@
+.container #btn0 {
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 1px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container #btn1 {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 1px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #txt {
+    position: absolute;
+    top: 12.5%;
+    left: 16%;
+    color: whitesmoke;
+    font-size: large;
+    text-align: left;
+  }
