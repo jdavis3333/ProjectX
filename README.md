@@ -48,13 +48,13 @@ Then open in your preferred text editor:
 
 ## Authors 
 ### [Mai Banh](https://github.com/mtbanh)
-- [LinkedIn]( )
+- [LinkedIn](https://www.linkedin.com/in/banhtmai/)
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: 
 
 ### [Ernie Urzua](https://github.com/ErnestUrzua)
-- [LinkedIn]()
+- [LinkedIn](https://www.linkedin.com/in/ernesturzua/)
 - [Portfolio]( )
 - [Highlighted-Work]( )
 - email: 
