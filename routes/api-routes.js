@@ -27,6 +27,14 @@ var auth = require("../config/passport")
 
 // };
 
+<<<<<<< HEAD
+=======
+
+
+//Post route for signing up a user
+app.post("/api/signup", function(req, res) {
+
+>>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
@@ -43,6 +51,10 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
     db.User.create({
       email: req.body.email,
       password: req.body.password
@@ -55,6 +67,22 @@ module.exports = function(app) {
       });
   });
 
+<<<<<<< HEAD
+=======
+
+
+// Route for logging user out, then sends user back to the sign up screen
+app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/");
+});
+
+//Route for user login
+app.post("/api/login", ... , function(req, res) {
+    res.json(req.user);
+});
+
+>>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -76,3 +104,7 @@ module.exports = function(app) {
     }
   });
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
