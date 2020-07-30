@@ -31,7 +31,7 @@ $(document).ready(function() {
         password: password
       })
         .then(function() {
-          window.location.replace("/members");
+          window.location.replace("../html/story_id_1");
           // If there's an error, log the error
         })
         .catch(function(err) {
