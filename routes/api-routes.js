@@ -1,40 +1,4 @@
 
-// Requiring models
-var db = require("../models")
-var auth = require("../config/passport")
-
-// module.exports = (app)=>{
-// //Routes
-// //Get route for retrieving a story and choices
-// app.get("/api/stories_id/:id", function(req, res) {
-//     db.Stories.findStory({
-//         where: {
-//             id: req.params.id
-//         },
-//         include: [db.Choices] //need to update/verify in models
-//     }).then(function(dbStory){
-//         res.json(dbStory);
-//     });
-// });
-
-
-// //Post route for saving player's name
-// app.post("api/stories", function(req, res) {
-//     db.Stories.create(req.body).then(function(dbStory) {
-//         res.json(dbStory);
-//     });
-// });
-
-// };
-
-<<<<<<< HEAD
-=======
-
-
-//Post route for signing up a user
-app.post("/api/signup", function(req, res) {
-
->>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
@@ -51,10 +15,6 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
-<<<<<<< HEAD
-=======
-
->>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
     db.User.create({
       email: req.body.email,
       password: req.body.password
@@ -67,8 +27,6 @@ module.exports = function(app) {
       });
   });
 
-<<<<<<< HEAD
-=======
 
 
 // Route for logging user out, then sends user back to the sign up screen
@@ -82,7 +40,6 @@ app.post("/api/login", ... , function(req, res) {
     res.json(req.user);
 });
 
->>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -104,7 +61,3 @@ app.post("/api/login", ... , function(req, res) {
     }
   });
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> 3b1e358f68d8de0de760887447cad35bc5ce5db2
