@@ -1,37 +1,4 @@
 
-// Requiring models
-var db = require("../models")
-var auth = require("../config/passport")
-
-// module.exports = (app)=>{
-// //Routes
-// //Get route for retrieving a story and choices
-// app.get("/api/stories_id/:id", function(req, res) {
-//     db.Stories.findStory({
-//         where: {
-//             id: req.params.id
-//         },
-//         include: [db.Choices] //need to update/verify in models
-//     }).then(function(dbStory){
-//         res.json(dbStory);
-//     });
-// });
-
-
-// //Post route for saving player's name
-// app.post("api/stories", function(req, res) {
-//     db.Stories.create(req.body).then(function(dbStory) {
-//         res.json(dbStory);
-//     });
-// });
-
-// };
-
-
-
-//Post route for signing up a user
-app.post("/api/signup", function(req, res) {
-
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
@@ -48,7 +15,6 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
   app.post("/api/signup", function(req, res) {
-
     db.User.create({
       email: req.body.email,
       password: req.body.password
@@ -95,4 +61,3 @@ app.post("/api/login", ... , function(req, res) {
     }
   });
 };
-
