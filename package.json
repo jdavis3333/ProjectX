@@ -20,8 +20,12 @@
   "homepage": "https://github.com/jdavis3333/ProjectX#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "sequelize": "^6.3.3",
-    "sequelize-fixtures": "^1.2.0"
+    "sequelize-fixtures": "^1.2.0",
+    "bcryptjs": "2.4.3"
   }
 }
