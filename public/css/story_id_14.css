@@ -1,0 +1,13 @@
+
+  #txt {
+    position: absolute;
+    top: 58%;
+    left: 61%;
+    color: white;
+    font-size: larger;
+    text-align: right;
+  }
+
+  body {
+      background-color: black;
+  }
