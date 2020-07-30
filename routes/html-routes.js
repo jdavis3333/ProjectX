@@ -26,7 +26,6 @@ app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
 })
 
-
 // Route to Story 2
 app.get("/story_id_2", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/story_id_2.html"))
