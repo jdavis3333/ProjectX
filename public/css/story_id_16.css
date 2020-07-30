@@ -1,13 +1,7 @@
-/* special font for vaporwave asthetic */
-html {
-    font-family: 'Arya', sans-serif;
-    color: ghostwhite;
-  }
-
-  #btn0 {
+.container #btn0 {
     position: absolute;
-    top: 50%;
-    left: 43%;
+    top: 60%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -20,10 +14,10 @@ html {
     text-align: center;
   }
 
- #btn1 {
+  .container #btn1 {
     position: absolute;
-    top: 50%;
-    left: 59%;
+    top: 60%;
+    left: 55%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -34,4 +28,18 @@ html {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+  }
+
+  #txt {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: larger;
+    color: white;
+    text-align: center;
+
+}
+
+  body {
+      background-color: rgb(104, 104, 104);
   }
