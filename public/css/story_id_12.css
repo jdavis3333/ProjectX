@@ -1,0 +1,43 @@
+.container #btn0 {
+    position: absolute;
+    top: 31%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 1px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container #btn1 {
+    position: absolute;
+    top: 31%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 1px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #txt {
+    position: absolute;
+    top: 16%;
+    left: 16%;
+    color: whitesmoke;
+    font-size: larger;
+  }
+
+  body {
+      background-color: rgb(255, 243, 220);
+  }
