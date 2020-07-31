@@ -14,8 +14,11 @@
 
 <body class = black>
   <nav class = black>
-    <iframe src="assets/sounds/250-ml-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <iframe src="assets/sounds/250-ml-silence.mp3" allow="autoplay" id="audio"  style="display: none"></iframe>
     <ul class="right hide-on-med-and-down">
+      <audio id="audio" autoplay preload loop>
+        <source src="./assets/sounds/enclave/introLoop.mp3" type="audio/mp3">
+      </audio>
       <li><a href="../html/about_us.html" class="waves-effect waves-light btn grey darken-4">About us</a></li>
     </ul>
     </div>
@@ -32,9 +35,6 @@
     <a href="./html/signup.html "><button id="btn1"
         class="waves-effect waves-light btn-large grey purple accent-3">Sign-up</button></a>
     <div id="particles-js"></div>
-    <audio id="player" autoplay loop>
-      <source src="./assets/sounds/enclave/introLoop.mp3" type="audio/mp3">
-    </audio>
   </main>
 
 
