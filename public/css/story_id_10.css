@@ -1,7 +1,7 @@
 .container #btn0 {
     position: absolute;
-    top: 50%;
-    left: 43%;
+    top: 64%;
+    left: 67%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -14,27 +14,16 @@
     text-align: center;
   }
 
-  .container #btn1 {
-    position: absolute;
-    top: 50%;
-    left: 59%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 1px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-  }
 
   body {
       background-color: black;
   }
 
   .container #txt {
-    color: white;
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    font-size: x-large;
+    color: black;
 
 }
