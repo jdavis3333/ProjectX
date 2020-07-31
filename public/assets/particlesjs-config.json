@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#00088c"
+      "value": "#d6ff00"
     },
     "shape": {
       "type": "edge",
@@ -26,7 +26,7 @@
       }
     },
     "opacity": {
-      "value": 0.14994041841268327,
+      "value": 0.5,
       "random": true,
       "anim": {
         "enable": false,
