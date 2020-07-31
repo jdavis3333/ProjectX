@@ -1,0 +1,14 @@
+#txt {
+    position: absolute;
+    top: 79%;
+    left: 16.5%;
+    font-size: large;
+    color: white;
+    text-align: left;
+    font-size: x-large;
+
+}
+
+  body {
+      background-color: black;
+  }
