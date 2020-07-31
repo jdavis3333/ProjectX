@@ -1,0 +1,11 @@
+#txt {
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    color: whitesmoke;
+    font-size: larger;
+  }
+
+  body {
+      background-color: rgb(255, 243, 220);
+  }

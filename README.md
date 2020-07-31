@@ -42,8 +42,8 @@ Then open in your preferred text editor:
 * [Sequelize](https://sequelize.org/)
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
-* [Handlebars](https://handlebarsjs.com/)
 * [Express](https://expressjs.com/)
+* [Particles](https://vincentgarreau.com/particles.js/)
 
 
 ## Authors 
@@ -55,9 +55,9 @@ Then open in your preferred text editor:
 
 ### [Ernie Urzua](https://github.com/ErnestUrzua)
 - [LinkedIn](https://www.linkedin.com/in/ernesturzua/)
-- [Portfolio]( )
-- [Highlighted-Work]( )
-- email: 
+- [Portfolio](https://ernesturzua.github.io/Portfolio/)
+- [Highlighted-Work](https://ernesturzua.github.io/Shoppinator/)
+- email: ernieurzua@gmail.com
 
 ### [Joes Davis](https://github.com/jdavis3333)
 - [LinkedIn]( )
