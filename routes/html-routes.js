@@ -8,12 +8,15 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
   app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, "../public/index.html"))
+    console.log('hi')
   })
 
-  app.get('/members/story', isAuthenticated, (req, res)=>{
+
+  app.get("/users", isAuthenticated, (req, res)=>{
     res.sendFile(path.join(__dirname, "../public/html/story_id_1.html"))
   })
 
+};
   // app.get("/", function(req, res) {
   //   // If the user already has an account send them to the members page
   //   if (req.user) {

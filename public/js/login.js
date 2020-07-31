@@ -13,7 +13,7 @@ $(document).ready(function() {
         email: emailInput.val().trim(),
         password: passwordInput.val().trim()
       };
-  
+      console.log(userData);
       if (!userData.email || !userData.password) {
         return;
       }
@@ -31,7 +31,7 @@ $(document).ready(function() {
         password: password
       })
         .then(function() {
-          window.location.replace("../html/story_id_1");
+          window.location.replace("/users");
           // If there's an error, log the error
         })
         .catch(function(err) {
