@@ -21,24 +21,14 @@ module.exports = function(app) {
     })
       .then(function() {
         res.redirect(307, "/api/login");
+        console.log(req.body)
       })
+      
       .catch(function(err) {
         res.status(401).json(err);
+        console.log(err)
       });
   });
-
-
-
-// Route for logging user out, then sends user back to the sign up screen
-app.get("/logout", function(req, res) {
-    req.logout();
-    res.redirect("/");
-});
-
-//Route for user login
-app.post("/api/login", ... , function(req, res) {
-    res.json(req.user);
-});
 
   // Route for logging user out
   app.get("/logout", function(req, res) {
