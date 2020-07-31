@@ -15,6 +15,11 @@ html {
   width: 50%;
   margin-left: 26%;
 }
+#gameOver {
+  width: 50%;
+  margin-left: 26%;
+
+}
 
 #btn0 {
   position: absolute;
