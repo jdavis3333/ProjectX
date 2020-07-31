@@ -1,0 +1,13 @@
+#txt {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: larger;
+    color: white;
+    text-align: left;
+
+}
+
+  body {
+      background-color: rgb(104, 104, 104);
+  }
