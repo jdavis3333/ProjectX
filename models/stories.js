@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
         },
         story_value: DataTypes.TEXT,
-        root_story: DataTypes.BOOLEAN
+        root_story: DataTypes.BOOLEAN,
+        choices: DataTypes.JSON
     }, {timestamps: false});
 
     Stories.associate = (models) =>{

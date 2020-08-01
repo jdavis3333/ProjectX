@@ -31,12 +31,14 @@
             <img class="responsive-img" src="../img/startpage.jpeg">
         </span></div>
       </div>
-
+      
       <a><div id="btn2" class="waves-effect waves-light btn-large black">Are you ready to enter the Maze?</div></a>
-  
-      <a href="../html/story_id_2.html"><button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3">No, get supplies</button></a>
-      <a href="../html/story_id_3.html"><button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3">Yes!</button></a>
-
+      <!--TODO: #btn2 need to be blank and is where the story values will be populated depending on choice -->
+      <div class="btns">
+      <!-- TODO: content needs to be blanked and text will be generated base on choiceID -->
+      <a href="/api/storyid:id"><button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3" value="0">No, get supplies</button></a>
+      <a href="/api/storyid:id"><button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3" value="1">Yes!</button></a>
+    </div>
 
     </div>
 
@@ -46,6 +48,61 @@
     <div class="rain back-row"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        
+    // Getting references to our form and input
+    const btns = $(".btns");
+
+    btns.on("click", (event)=>{
+      const userChoice = btns.val()
+
+      const nextStory=(userChoice)=>{
+        $.get("/api/storyid/:id")
+      }
+    })
+   
+  
+    // When the signup button is clicked, we validate the email and password are not blank
+    signUpForm.on("submit", function(event) {
+      event.preventDefault();
+      var userData = {
+        username: usernameInput.val(),
+        email: emailInput.val().trim(),
+        password: passwordInput.val().trim()
+      };
+  
+      if (!username || !userData.email || !userData.password) {
+        return;
+      }
+      // If we have an email and password, run the signUpUser function
+      signUpUser(userData.username, userData.email, userData.password);
+      emailInput.val("");
+      passwordInput.val("");
+    });
+  
+    // Does a post to the signup route. If successful, we are redirected to the members page
+    // Otherwise we log any errors
+    function signUpUser(username, email, password) {
+      $.post("/api/signup", {
+        username: username,
+        email: email,
+        password: password
+      })
+        .then(function(data) {
+          window.location.replace("/");
+          // If there's an error, handle it by throwing up a bootstrap alert
+        })
+        .catch(handleLoginErr);
+    }
+  
+    function handleLoginErr(err) {
+      $("#alert .msg").text(err.responseJSON);
+      $("#alert").fadeIn(500);
+    }
+  });
+    </script>
     <script src="../js/story_id_1.js"></script>
 </body>
 </html>
+
