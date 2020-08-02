@@ -43,6 +43,30 @@
         <button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="1">Yes</button></a>
   </div>
 
-</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <script>
+    $(document).ready(function () {
+//add class to the btns; one event listener $(".").on("click", (event) => event.target.text())
+      // Getting references to our form and input
+      $(".btn").on("click", (event)=>{
+        const userChoice = $(event.target).text();
+        console.log(userChoice);
+        $.get("/api/" + userChoice, (data)=>{
+          //data contains story_value; to access choice data.choices
+          console.log(data)
+        }).then((data)=>{
+        clear();
+        const story = data.story_value
+        $("#btn2").append(story);
+      })
+
+      })
+      
+      const clear = () =>{
+        $(".btn").empty();
+      };
+</script>
+
+</body>
 </html>
