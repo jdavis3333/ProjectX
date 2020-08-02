@@ -5,13 +5,13 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
         },
         story_value: DataTypes.TEXT,
-        root_story: DataTypes.BOOLEAN,
-        choice_id: DataTypes.JSON
+        // root_story: DataTypes.BOOLEAN,
+        choice_value: DataTypes.JSON
     }, {timestamps: false});
 
     Stories.associate = (models) =>{
         Stories.hasMany(models.Choices, {
-            foreignKey: 'storyID'
+            foreignKey: 'story_id'
         });
     };
     

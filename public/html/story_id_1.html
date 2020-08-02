@@ -35,13 +35,64 @@
     </div>
 
     <a>
-
-      <div id="txt">Are you ready to enter the Maze?</div>
-
+      <div id="btn2" class="waves-effect waves-light btn-large black btn">Are you ready to enter the Maze?</div>
     </a>
-        <button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0">No, get supplies</button></a>
-        <button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="1">Yes</button></a>
+    <!--TODO: #btn2 need to be blank and is where the story values will be populated depending on choice -->
+    <!-- TODO: content needs to be blanked and text will be generated base on choiceID -->
+    <!-- <a href=""> -->
+    <button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0">No, get supplies</button></a>
+    <!-- <a href=""> -->
+    <button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="1">Yes</button></a>
+
   </div>
+
+  <!-- check the Comments for more info -->
+
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //add class to the btns; one event listener $(".").on("click", (event) => event.target.text())
+      // Getting references to our form and input
+      $(".btn").on("click", (event) => {
+        const userChoice = $(event.target).text();
+        console.log(userChoice);
+        $.get("/api/choice/" + userChoice, (data) => {
+          //data contains story_value; to access choice data.choices
+          console.log(data)
+        }).then((data) => {
+          console.log(data)
+          const storyID = data.story_id
+          $.get("/api/story/" + storyID, (result) => {
+            clear();
+            console.log(result)
+          }).then((result) => {
+            let story = result.story_value;
+            console.log(story)
+            let choice1 = result.choice_value[0];
+            console.log(choice1)
+            let choice2 = result.choice_value[1];
+            console.log(choice2);
+
+            $("#btn2").append(story);
+            $("#btn0").append(choice1);
+            $("#btn1").append(choice2);
+
+          })
+        })
+
+      })
+
+      const clear = () => {
+        $(".btn").empty();
+      };
+
+
+    
+  </script>
 
 </body>
 
