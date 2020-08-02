@@ -1,6 +1,6 @@
 .container #btn0 {
     position: absolute;
-    top: 45%;
+    top: 95%;
     left: 47%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -16,7 +16,7 @@
 
   .container #btn1 {
     position: absolute;
-    top: 45%;
+    top: 95%;
     left: 58%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -32,16 +32,11 @@
 
   #txt {
     position: absolute;
-    top: 15%;
-    left: 17%;
-    color: whitesmoke;
-    font-size: x-large;
+    top: 86%;
+    left: 42%;
+    color: black;
+    font-weight: 800;
+
   }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-  }
 
