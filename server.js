@@ -50,7 +50,7 @@ const choice = [
   { choice_id:5 , choice_value:"Jump!" , story_id:null },
   { choice_id:6 , choice_value:"climb out" , story_id:10 },
   { choice_id:7 , choice_value:"Swim to the other side" , story_id:11 },
-  { choice_id:8 , choice_value:"no" , story_id:2 },
+  { choice_id:8 , choice_value:"No, get supplies" , story_id:2 },
   { choice_id:9 , choice_value:"Rope" , story_id:4 },
   { choice_id:10 , choice_value:"Shovel" , story_id:5 },
   { choice_id:11 , choice_value:"Jump" , story_id:null },
