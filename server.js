@@ -26,19 +26,22 @@ require("./routes/api-routes.js")(app);
 // Starts the server to begin listening
 // =============================================================
 const story = [ 
-{ story_id: 1, story_value: 'Welcome to the Maze. Your main objective is to survive and escape. Be aware that each of your choices will affect your chances. Are you ready to proceed?' },
-{ story_id: 2, story_value: 'You are heading to the survival shop to get some gear. The owner only has rope and a shovel. Which one do you pick?' },
-{ story_id: 3, story_value: 'You ran into the maze enthusiastically and hit a fork in the road. To your right is a foggy corridor, and to the left you hear a loud noise. Which way do you choose? Noise or fog?' },
-{ story_id: 4, story_value: 'The rope is too short! Do you want to jump? Or do you want to go back to the shop for more tools?' },
-{ story_id: 5, story_value: "After leaving the shop, an old man saw your shovel and approach to asks for your help. He wants you to help dig up his buried treasure. Will you help?" },
-{ story_id: 6, story_value: 'The fog is getting thicker. Are you sure you want to continue? Of course you do! As you continue, the fog dissipates and you almost fell into a hole! What do you want to do?' },
-{ story_id: 7, story_value: 'You turned the corner and fell into a swamp! What do you want to do?' },
-{ story_id: 8, story_value: 'You finally enter the maze and see a ladder straight ahead of you and a brigh light to your left. Follow the bright light or climb the ladder?' },
-{ story_id: 9, story_value: 'The old man leads you into a canyon and suddenly grabs your shovel and hits you with it. Your vision starts to fade, and you start seeing your deceased grandpa.' },
-{ story_id: 10, story_value: 'You keep on sinking further and further...' },
-{ story_id: 11, story_value: 'You were eaten by an alligator or a crocodile, your choice, either way you were eaten.' }
+{ story_id: 1, story_value: 'Welcome to the Maze. Your main objective is to survive and escape. Be aware that each of your choices will affect your chances. Are you ready to proceed?', choice_id: [1,8] },
+{ story_id: 2, story_value: 'You are heading to the survival shop to get some gear. The owner only has rope and a shovel. Which one do you pick?', choice_id: [9,10]},
+{ story_id: 3, story_value: 'You ran into the maze enthusiastically and hit a fork in the road. To your right is a foggy corridor, and to the left you hear a loud noise. Which way do you choose? Noise or fog?', choice_id: [2,3] },
+{ story_id: 4, story_value: 'The rope is too short! Do you want to jump? Or do you want to go back to the shop for more tools?', choice_id: [4,5] },
+{ story_id: 5, story_value: "After leaving the shop, an old man saw your shovel and approach to asks for your help. He wants you to help dig up his buried treasure. Will you help?", choice_id: [8,9]},
+{ story_id: 6, story_value: 'The fog is getting thicker. Are you sure you want to continue? Of course you do! As you continue, the fog dissipates and you almost fell into a hole! What do you want to do?', choice_id: [1,2]},
+{ story_id: 7, story_value: 'You turned the corner and fell into a swamp! What do you want to do?', choice_id: [] },
+{ story_id: 8, story_value: 'You finally enter the maze and see a ladder straight ahead of you and a brigh light to your left. Follow the bright light or climb the ladder?', choice_id: [] },
+{ story_id: 9, story_value: 'The old man leads you into a canyon and suddenly grabs your shovel and hits you with it. Your vision starts to fade, and you start seeing your deceased grandpa.', choice_id: [] },
+{ story_id: 10, story_value: 'You keep on sinking further and further...', choice_id: [] },
+{ story_id: 11, story_value: 'You were eaten by an alligator or a crocodile, your choice, either way you were eaten.', choice_id: [] }
 ];
-
+//query: 
+//to display the story value-we need to SELECT story_value and choices where story_id = ?? 
+  //story_value will be display on the page while choices will be use to query the choice db
+    //Select choice_value FROM choice WHERE choice_id = choices[]
 const choice = [
   { choice_id:1, choice_value:"yes" , story_id:3 },
   { choice_id:2 , choice_value:"left" , story_id:6 },
