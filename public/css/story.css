@@ -55,8 +55,16 @@
 
   }
 
+  canvas {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+
 body {
-    background-image: url("../img/startpage.jpeg");
+    /* background-image: url("../img/startpage.jpeg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
