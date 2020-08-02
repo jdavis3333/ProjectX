@@ -17,6 +17,15 @@ module.exports = function (app) {
           where: { story_id: item.story_id }
         }).then((storyItem) => {
           res.json(storyItem)
+          db.Choices.findOne({
+            where: { choice_id: storyItem.choice_id[0]}
+          }).then((choiceValue)=>{
+            // console.log(choiceValue)
+            res.json(choiceValue);
+          }).catch(err=>{
+            console.log(err)
+            res.json(err)
+          })
         })
         .catch(err => {
           console.log(err)
