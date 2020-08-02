@@ -1,6 +1,6 @@
 .container #btn0 {
     position: absolute;
-    top: 95%;
+    top: 65%;
     left: 47%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -16,8 +16,24 @@
 
   .container #btn1 {
     position: absolute;
-    top: 95%;
+    top: 65%;
     left: 58%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 1px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container #btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -38,7 +54,6 @@
     font-weight: 800;
 
   }
-
 
 body {
     background-image: url("../img/startpage.jpeg");
