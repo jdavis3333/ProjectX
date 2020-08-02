@@ -1,3 +1,41 @@
+$(document).ready(function () {
+  //add class to the btns; one event listener $(".").on("click", (event) => event.target.text())
+  // Getting references to our form and input
+  $(".btn").on("click", (event) => {
+    const userChoice = $(event.target).text();
+    console.log(userChoice);
+    $.get("/api/choice/" + userChoice, (data) => {
+      //data contains story_value; to access choice data.choices
+      console.log(data)
+    }).then((data) => {
+      console.log(data)
+      const storyID = data.story_id
+      $.get("/api/story/" + storyID, (result) => {
+        clear();
+        console.log(result)
+      }).then((result) => {
+        let story = result.story_value;
+        console.log(story)
+        let choice1 = result.choice_value[0];
+        console.log(choice1)
+        let choice2 = result.choice_value[1];
+        console.log(choice2);
+
+        $("#btn2").append(story);
+        $("#btn0").append(choice1);
+        $("#btn1").append(choice2);
+
+      })
+    })
+
+  })
+
+  const clear = () => {
+    $(".btn").empty();
+  };
+});
+
+
 var w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
     ctx = c.getContext( '2d' ),
