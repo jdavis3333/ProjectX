@@ -36,8 +36,8 @@
       <!--TODO: #btn2 need to be blank and is where the story values will be populated depending on choice -->
       <div class="btns">
       <!-- TODO: content needs to be blanked and text will be generated base on choiceID -->
-      <a href="/api/storyid:id"><button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3" value="0">No, get supplies</button></a>
-      <a href="/api/storyid:id"><button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3" value="1">Yes!</button></a>
+      <a href=""><button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3" value="0">No, get supplies</button></a>
+      <a href=""><button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3" value="1">Yes!</button></a>
     </div>
 
     </div>
@@ -56,7 +56,7 @@
 
     btns.on("click", (event)=>{
       const userChoice = btns.val()
-
+      console.log(userChoice);
       const nextStory=(userChoice)=>{
         $.get("/api/storyid/:id")
       }
