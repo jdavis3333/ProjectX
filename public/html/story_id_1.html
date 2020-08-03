@@ -30,7 +30,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12"><span class="flow-text center-align">
-          <img class="responsive-img" src="../img/story_id_1.jpeg">
+          <img class="responsive-img" id="storyImage" src="" >
         </span></div>
     </div>
 
@@ -66,6 +66,7 @@
         }).then((data) => {
           console.log(data)
           const storyID = data.story_id
+          const imageID = data.image_id
           $.get("/api/story/" + storyID, (result) => {
             clear();
             console.log(result)
@@ -76,10 +77,23 @@
             console.log(choice1)
             let choice2 = result.choice_value[1];
             console.log(choice2);
+            $.get("/api/image/" + image, (img) => {
+              console.log(img);
+            }).then((img) => {
+              let image = result.story_image;
+            console.log(image);
+            }) 
+
+             
+
+            // image.attr("src", image);
+            // image.attr("alt", "story line");
+
 
             $("#btn2").append(story);
             $("#btn0").append(choice1);
             $("#btn1").append(choice2);
+            // $("#storyImage").append(image)
 
           })
         })
@@ -90,7 +104,7 @@
         $(".btn").empty();
       };
 
-
+    })
     
   </script>
 

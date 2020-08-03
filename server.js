@@ -27,11 +27,11 @@ require("./routes/api-routes.js")(app);
 // =============================================================
 const story = [ 
   //checked
-{ story_id: 1, story_value: 'Welcome to the Maze. Your main objective is to survive and escape. Be aware that each of your choices will affect your chances. Are you ready to proceed?', choice_value: ["Yes", "No, get supplies"] },
+{ story_id: 1, story_value: 'Welcome to the Maze. Your main objective is to survive and escape. Be aware that each of your choices will affect your chances. Are you ready to proceed?', choice_value: ["Yes", "No, get supplies"], story_image: 1 },
 //checked
-{ story_id: 2, story_value: 'You are heading to the survival shop to get some gear. The owner only has rope and a shovel. Which one do you pick?', choice_value: ["rope","shovel"]},
+{ story_id: 2, story_value: 'You are heading to the survival shop to get some gear. The owner only has rope and a shovel. Which one do you pick?', choice_value: ["rope","shovel"], story_image: 2 },
 //checked
-{ story_id: 3, story_value: 'You ran into the maze enthusiastically and hit a fork in the road. To your right is a foggy corridor, and to the left you hear a loud noise. Which way do you choose? Noise or fog?', choice_value: ["Left","Right"] },
+{ story_id: 3, story_value: 'You ran into the maze enthusiastically and hit a fork in the road. To your right is a foggy corridor, and to the left you hear a loud noise. Which way do you choose? Noise or fog?', choice_value: ["Left","Right"], story_image: 3 },
 //checked
 { story_id: 4, story_value: 'You entered the maze, finally but found that the rope is too short to rapel down! Do you want to jump? Or do you want to go back to the shop for more tools?', choice_value: ["Jump","Go back to the shop"] },
 //checked
@@ -40,7 +40,7 @@ const story = [
 { story_id: 6, story_value: 'The fog is getting thicker. Are you sure you want to continue? Of course you do! As you continue, the fog dissipates and you almost fell into a hole! What do you want to do?', choice_value: [4,5]},
 //checked
 { story_id: 7, story_value: 'You turned the corner and fell into a swamp! What do you want to do?', choice_value: ["Climb out","Swim to the other side"] },
-//checked
+//checkedr
 { story_id: 8, story_value: 'You finally enter the maze and see a ladder straight ahead of you and a bright light to your left. Follow the bright light or climb the ladder?', choice_value: [] },
 //checked
 { story_id: 9, story_value: 'The old man leads you into a canyon and suddenly grabs your shovel and hits you with it. Your vision starts to fade, and you start seeing your deceased grandpa.', choice_value: [] },
