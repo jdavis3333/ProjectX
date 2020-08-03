@@ -31,6 +31,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12"><span class="flow-text center-align">
+          <img id="gameOver">
           <img class="responsive-img" src="../img/startpage.jpeg">
         </span></div>
     </div>
@@ -70,6 +71,14 @@
             clear();
             console.log(result)
           }).then((result) => {
+            if (storyID === 12) {
+              // $("#gameOver").append(story);
+              console.log("game over");
+              $('.responsive-img').css("display","none");
+              $('.btn').css("display","none");
+              $("#gameOver").attr("src", "../img/gameOver.png");
+            }
+            else {
               let story = result.story_value;
               console.log(story)
               let choice1 = result.choice_value[0];
@@ -80,7 +89,7 @@
               $("#txt").append(story);
               $("#btn0").append(choice1);
               $("#btn1").append(choice2);
-          
+            }
 
           })
         })
