@@ -35,6 +35,8 @@
     </div>
 
     <a>
+      <!-- TODO: Styling  -->
+      <div id="username"></div>
       <div id="btn2" class="waves-effect waves-light btn-large black btn">Are you ready to enter the Maze?</div>
     </a>
     <!--TODO: #btn2 need to be blank and is where the story values will be populated depending on choice -->
@@ -55,6 +57,10 @@
 
   <script>
     $(document).ready(function () {
+      $.get("/api/user_data", (res)=>{
+        const username = res.username;
+        $("#username").append(username)
+      })
       //add class to the btns; one event listener $(".").on("click", (event) => event.target.text())
       // Getting references to our form and input
       $(".btn").on("click", (event) => {
