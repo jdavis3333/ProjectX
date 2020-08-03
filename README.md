@@ -39,6 +39,11 @@ animation
 
 ![code screenshot](./public/img/animation.png)
 
+storyline code 
+
+![code screenshot](./public/img/story_line.png)
+
+
 
 ## Technology
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip)
