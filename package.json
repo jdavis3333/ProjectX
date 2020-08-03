@@ -2,6 +2,9 @@
   "name": "projectx",
   "version": "1.0.0",
   "description": "project x",
+  "engines": {
+    "node": "12.17.0"
+  },
   "main": "server.js",
   "scripts": {
     "test": "test",
