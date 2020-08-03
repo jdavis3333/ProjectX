@@ -1,6 +1,7 @@
 # ProjectX
 This is how our game runs
-![gif demo]()
+
+![gif demo](./public/img/deployed-site.gif)
 
 ## Table of Content
 - Objective
@@ -31,8 +32,13 @@ Then open in your preferred text editor:
 - [visual studio code](https://code.visualstudio.com/) 
 
 ## Code Highlight
+Database code snippet
 
-![code screenshot]( )
+![code screenshot](./public/img/database.png)
+
+animation 
+
+![code screenshot](./public/img/animation.png)
 
 
 ## Technology
