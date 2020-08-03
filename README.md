@@ -1,5 +1,4 @@
 # ProjectX
-This is how our game runs
 
 ![gif demo](./public/img/deployed-site.gif)
 
@@ -16,7 +15,7 @@ Our team built ProjectX because we felt like many of the storyline user choice g
 
 ## Deploy Link
 
-
+https://fast-meadow-38464.herokuapp.com/
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -49,6 +48,8 @@ animation
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 * [Express](https://expressjs.com/)
 * [Particles](https://vincentgarreau.com/particles.js/)
+* [Jquery](https://jquery.com/)
+* [Passport](http://www.passportjs.org/)
 
 
 ## Authors 
