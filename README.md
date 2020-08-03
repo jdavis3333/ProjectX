@@ -1,5 +1,5 @@
 # ProjectX
-
+This is how our game runs
 ![gif demo]()
 
 ## Table of Content
