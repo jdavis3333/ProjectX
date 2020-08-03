@@ -11,10 +11,14 @@ html {
   width: 100%;
 }
 
+button:hover {
+  animation: overSaturation 1s infinite;
+}
+
 #logo {
   width: 50%;
   margin-left: 26%;
-  animation: overSaturation 2s infinite;
+  animation: overSaturation 2s infinite ease-in;
 }
 
 /* https://cubic-bezier.com/#.17,.67,.83,.67  good resource for creating and previewing curves */

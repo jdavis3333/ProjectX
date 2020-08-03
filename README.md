@@ -11,7 +11,7 @@ This is how our game runs
 - Authors
 
 ## Objectives
-
+Our team built ProjectX because we felt like many of the storyline user choice game apps out today lack the adequate styling and pazazz that these kind of games need, together we added dynamic backgrounds, sound effects and much more as well a login page to make the app more exclusive. 
 
 ## Deploy Link
 
@@ -32,8 +32,7 @@ Then open in your preferred text editor:
 
 ## Code Highlight
 
-
-![code screenshot]()
+![code screenshot]( )
 
 
 ## Technology
