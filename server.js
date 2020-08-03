@@ -32,11 +32,11 @@ require("./routes/api-routes.js")(app);
 // =============================================================
 const story = [ 
   //checked
-{ story_id: 1, story_value: 'Welcome to the Maze. Your main objective is to survive and escape. Be aware that each of your choices will affect your chances. Are you ready to proceed?', choice_value: ["Yes", "No, get supplies"] },
+{ story_id: 1, story_value: `Welcome to the Maze<br> Your main objective is to survive and escape.<br> Be aware that each of your choices will affect your chances<br> Are you ready to proceed?`, choice_value: ["Yes", "No, get supplies"] },
 //checked
 { story_id: 2, story_value: 'You are heading to the survival shop to get some gear. The owner only has rope and a shovel. Which one do you pick?', choice_value: ["rope","shovel"]},
 //checked
-{ story_id: 3, story_value: 'You ran into the maze enthusiastically and hit a fork in the road. To your right is a foggy corridor, and to the left you hear a loud noise. Which way do you choose? Noise or fog?', choice_value: ["Left","Right"] },
+{ story_id: 3, story_value: `You ran into the maze enthusiastically and hit a fork in the road<br> To your right is a foggy corridor, and to the left you hear a loud noise<br> Which way do you choose? Noise or fog?`, choice_value: ["Left","Right"] },
 //checked
 { story_id: 4, story_value: 'You entered the maze, finally but found that the rope is too short to rapel down! Do you want to jump? Or do you want to go back to the shop for more tools?', choice_value: ["Jump","Go back to the shop"] },
 //checked
@@ -46,13 +46,14 @@ const story = [
 //checked
 { story_id: 7, story_value: 'You turned the corner and fell into a swamp! What do you want to do?', choice_value: ["Climb out","Swim to the other side"] },
 //checked
-{ story_id: 8, story_value: 'You finally enter the maze and see a ladder straight ahead of you and a bright light to your left. Follow the bright light or climb the ladder?', choice_value: [] },
+{ story_id: 8, story_value: 'You finally enter the maze and see a ladder straight ahead of you and a bright light to your left. Follow the bright light or climb the ladder?', choice_value: ["Say goodbye"] },
 //checked
-{ story_id: 9, story_value: 'The old man leads you into a canyon and suddenly grabs your shovel and hits you with it. Your vision starts to fade, and you start seeing your deceased grandpa.', choice_value: [] },
+{ story_id: 9, story_value: 'The old man leads you into a canyon and suddenly grabs your shovel and hits you with it. Your vision starts to fade, and you start seeing your deceased grandpa.', choice_value: ["Say goodbye"] },
 //checked
-{ story_id: 10, story_value: 'You keep on sinking further and further...', choice_value: [] },
+{ story_id: 10, story_value: 'You keep on sinking further and further...', choice_value: ["Say goodbye"] },
 //checked
-{ story_id: 11, story_value: 'You were eaten by an alligator or a crocodile, your choice, either way you were eaten.', choice_value: [] }
+{ story_id: 11, story_value: 'You were eaten by an alligator or a crocodile, your choice, either way you were eaten.', choice_value: ["Say goodbye"] },
+{ story_id: 12, story_value: "Life is full of choices and you made the wrong ones", choice_value: []}
 ];
 //query: 
 //to display the story value-we need to SELECT story_value and choices where story_id = ?? 
@@ -72,7 +73,8 @@ const choice = [
   { choice_value:11 , choice_value:"Jump" , story_id:null },
   { choice_value:12 , choice_value:"Go back to the shop" , story_id:2 },
   { choice_value:13 , choice_value:"Leave him and head to the maze" , story_id:8 },
-  { choice_value:14 , choice_value:"Help him" , story_id:9 }
+  { choice_value:14 , choice_value:"Help him" , story_id:9 },
+  { choice_value: 15, choice_value: "Say goodbye" , story_id: 12}
 
 ]
 
