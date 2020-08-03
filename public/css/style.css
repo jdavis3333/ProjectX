@@ -1,0 +1,54 @@
+/* special font for vaporwave asthetic */
+
+html {
+  font-family: 'Arya', sans-serif;
+  color: ghostwhite;
+}
+
+/* sets particles canvas to background */
+
+#particles-js { 
+  width: 100%;
+}
+
+#logo {
+  width: 50%;
+  margin-left: 26%;
+}
+#gameOver {
+  width: 50%;
+  margin-left: 26%;
+
+}
+
+#btn0 {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 1px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#btn1 {
+  position: absolute;
+  top: 50%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 1px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}

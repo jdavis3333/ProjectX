@@ -1,32 +1,39 @@
 {
-  "name": "ProjectX",
+  "name": "projectx",
   "version": "1.0.0",
-  "description": "",
+  "description": "project x",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdavis3333/ProjectX.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "project",
+    "x",
+    "cyoa"
+  ],
+  "author": "Team 7",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jdavis3333/ProjectX/issues"
   },
   "homepage": "https://github.com/jdavis3333/ProjectX#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
-    "handlebars": "^4.7.6",
-    "materialize-css": "^1.0.0-rc.2",
+    "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
-    "pixi.js": "^5.3.2",
-    "sequelize": "^6.3.3"
-  },
-  "devDependencies": {
-    "ember-cli-materialize": "^0.22.0"
+    "particles.js": "^2.0.0",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.3.3",
+    "sequelize-fixtures": "^1.2.0",
+    "sweetalert": "^2.1.2"
   }
 }

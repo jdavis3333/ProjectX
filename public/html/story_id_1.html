@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <link rel="stylesheet" href="../css/story_id_1.css"> -->
+  <link rel="stylesheet" href="../css/story.css">
+</head>
+
+<body class="back-row-toggle splat-toggle">
+  <!-- <body> -->
+  <nav>
+    <audio id="audio" autoplay preload loop>
+      <source src="../assets/sounds/enclave/levelLoop1.mp3" type="audio/mp3">
+    </audio>
+    <div class="nav-wrapper purple darken-4">
+      <a href="#!" class="brand-logo">Maze Runner</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light btn grey darken-4" href="/logout">Quit</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col s12"><span class="flow-text center-align">
+          <img class="responsive-img" src="../img/startpage.jpeg">
+        </span></div>
+    </div>
+
+    <a>
+      <div id="username"></div>
+      <div id="txt">Are you ready to enter the Maze?</div>
+    </a>
+
+    <button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0">No, get supplies</button></a>
+    <button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="1">Yes</button></a>
+
+  </div>
+
+
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $.get("/api/user_data", (res)=>{
+        const username = res.username;
+        $("#username").append(username)
+      })
+
+      $(".btn").on("click", (event) => {
+        const userChoice = $(event.target).text();
+        console.log(userChoice);
+        $.get("/api/choice/" + userChoice, (data) => {
+          //data contains story_value; to access choice data.choices
+          console.log(data)
+        }).then((data) => {
+          console.log(data)
+          const storyID = data.story_id
+          $.get("/api/story/" + storyID, (result) => {
+            clear();
+            console.log(result)
+          }).then((result) => {
+            let story = result.story_value;
+            console.log(story)
+            let choice1 = result.choice_value[0];
+            console.log(choice1)
+            let choice2 = result.choice_value[1];
+            console.log(choice2);
+
+            $("#txt").append(story);
+            $("#btn0").append(choice1);
+            $("#btn1").append(choice2);
+
+          })
+        })
+
+      })
+
+      const clear = () => {
+        $("#txt").empty();
+        $("#btn0").empty();
+        $("#btn1").empty();
+
+      };
+
+    });
+    
+  </script>
+
+</body>
+
+</html>
