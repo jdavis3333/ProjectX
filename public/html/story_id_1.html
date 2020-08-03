@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,16 +31,16 @@
   <div class="container">
     <div class="row">
       <div class="col s12"><span class="flow-text center-align">
+          <img id="gameOver">
           <img class="responsive-img" src="../img/startpage.jpeg">
         </span></div>
     </div>
 
-    <a>
-      <!-- <div id="username"></div> -->
-      <div id="txt">Are you ready to enter the Maze?</div>
-    </a>
+    <!-- <div id="username"></div> -->
+    <div id="txt" class="center-align">Are you ready to enter the Maze?</div>
 
-    <button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0">No, get supplies</button></a>
+    <button id="btn0" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0">No, get
+      supplies</button></a>
     <button id="btn1" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="1">Yes</button></a>
 
   </div>
@@ -70,16 +71,25 @@
             clear();
             console.log(result)
           }).then((result) => {
-            let story = result.story_value;
-            console.log(story)
-            let choice1 = result.choice_value[0];
-            console.log(choice1)
-            let choice2 = result.choice_value[1];
-            console.log(choice2);
+            if (storyID === 12) {
+              // $("#gameOver").append(story);
+              console.log("game over");
+              $('.responsive-img').css("display","none");
+              $('.btn').css("display","none");
+              $("#gameOver").attr("src", "../img/gameOver.png");
+            }
+            else {
+              let story = result.story_value;
+              console.log(story)
+              let choice1 = result.choice_value[0];
+              console.log(choice1)
+              let choice2 = result.choice_value[1];
+              console.log(choice2);
 
-            $("#txt").append(story);
-            $("#btn0").append(choice1);
-            $("#btn1").append(choice2);
+              $("#txt").append(story);
+              $("#btn0").append(choice1);
+              $("#btn1").append(choice2);
+            }
 
           })
         })
@@ -94,7 +104,7 @@
       };
 
     });
-    
+
   </script>
 
 </body>
