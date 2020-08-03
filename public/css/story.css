@@ -1,7 +1,7 @@
 .container #btn0 {
     position: absolute;
-    top: 80%;
-    left: 30%;
+    top: 95%;
+    left: 47%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -12,12 +12,12 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-  }
+}
 
   .container #btn1 {
     position: absolute;
-    top: 80%;
-    left: 59%;
+    top: 95%;
+    left: 58%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -30,15 +30,24 @@
     text-align: center;
   }
 
-  body {
-      background-color: black;
-  }
-
-  .container #txt {
+  #username {
     position: absolute;
-    top: 65%;
-    left: 21%;
+    top: 86%;
+    left: 35%;
     color: white;
-    font-size: xx-large;
+    font-weight: 800;
+  }
+
+  #txt {
+    position: absolute;
+    top: 86%;
+    left: 42%;
+    color: white;
+    font-weight: 800;
 
   }
+
+
+body {
+  background-color: black;
+}
