@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +35,28 @@
         </span></div>
     </div>
 
-    <a>
+ 
       <!-- TODO: Styling  -->
       <div id="username"></div>
-      <button id="btn2" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0" href="./story_id_1.html">Click to Start</button></a>
+      <button id="btn2" class="waves-effect waves-light btn-large grey purple accent-3 btn" value="0"
+        href="./story_id_1.html">Click to Start</button>
+    
 
-      <!-- <div id="txt">Are you ready to enter the Maze?</div> -->
-    </a>
+    <!-- <div id="txt">Are you ready to enter the Maze?</div> -->
 
   </div>
 
-  <canvas id=c></canvas>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../js/start_page.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $.get("/api/user_data", (res) => {
+        const username = res.username;
+        $("#username").append(username)
+      })
+    })
+  </script>
 </body>
 
 </html>
