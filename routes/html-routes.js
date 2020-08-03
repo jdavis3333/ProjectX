@@ -13,7 +13,7 @@ module.exports = function(app) {
 
 
   app.get("/users", isAuthenticated, (req, res)=>{
-    res.sendFile(path.join(__dirname, "../public/html/story_id_1.html"))
+    res.sendFile(path.join(__dirname, "../public/html/start_page.html"))
   })
 
 };
