@@ -11,6 +11,10 @@ html {
   width: 100%;
 }
 
+button:hover {
+  animation: overSaturation 1s infinite;
+}
+
 #logo {
   width: 50%;
   margin-left: 26%;
