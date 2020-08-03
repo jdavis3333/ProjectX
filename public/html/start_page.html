@@ -34,14 +34,22 @@
         </span></div>
     </div>
 
-
-    <a id="btn2" class="waves-effect waves-light btn-large grey purple accent-3 btn" href="./story_id_1.html">Click to Start</a>
+    <a id="username" class="waves-effect waves-light btn-large grey purple accent-3 btn pulse"></a>
+    <a id="btn2" class="waves-effect waves-light btn-large grey purple accent-3 btn" href="/story">Click to Start</a>
 
   </div>
 
   <canvas id=c></canvas>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/start_page.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.get("/api/user_data", (res) => {
+        const username = res.username;
+        $("#username").append(`Welcome ${username} to the maze!`)
+      })
+    });
+  </script>
 </body>
 
 </html>
