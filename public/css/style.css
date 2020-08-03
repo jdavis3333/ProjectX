@@ -14,6 +14,7 @@ html {
 #logo {
   width: 50%;
   margin-left: 26%;
+  animation: overSaturation 2s infinite;
 }
 
 /* https://cubic-bezier.com/#.17,.67,.83,.67  good resource for creating and previewing curves */
@@ -23,8 +24,8 @@ html {
   /* margin-left: 26%; */
   animation: 
   fadeIn 2s cubic-bezier(0.0, 0.45, 0.85 ,1.0), 
-  zoomIn 1s cubic-bezier(.48,.47,.68,1.36) ;
-
+  zoomIn 1s cubic-bezier(.48,.47,.68,1.36),
+  deadSaturation 2s ;
 }
 
 /* Animations ------------------------------------------------------------------------*/
@@ -51,6 +52,17 @@ html {
 @keyframes zoomIn {
   from { transform: scale(0);}
   to { transform: scale(1);}
+}
+
+@keyframes deadSaturation {
+  from {filter: saturate(0);}
+  to {filter: saturate(1);}
+}
+
+@keyframes overSaturation {
+  from {filter: saturate(.75);}
+  50% {filter:saturate(1.5)}
+  to {filter: saturate(.75);}
 }
 
 #btn0 {
