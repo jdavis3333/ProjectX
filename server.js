@@ -37,7 +37,7 @@ const story = [
 //checked
 { story_id: 5, story_value: "After leaving the shop, an old man saw your shovel and approach to asks for your help. He wants you to help dig up his buried treasure. Will you help?", choice_value: ["Leave him and head to the maze", "Help him"]},
 //checked
-{ story_id: 6, story_value: 'The fog is getting thicker. Are you sure you want to continue? Of course you do! As you continue, the fog dissipates and you almost fell into a hole! What do you want to do?', choice_value: [4,5]},
+{ story_id: 6, story_value: 'The fog is getting thicker. Are you sure you want to continue? Of course you do! As you continue, the fog dissipates and you almost fell into a hole! What do you want to do?', choice_value: ["Ehh. Let's go back and find another way","Of course, jump!"]},
 //checked
 { story_id: 7, story_value: 'You turned the corner and fell into a swamp! What do you want to do?', choice_value: ["Climb out","Swim to the other side"] },
 //checked
