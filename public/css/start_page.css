@@ -15,6 +15,13 @@
     text-align: center;
   }
 
+  #username {
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    color: white;
+    font-weight: 800;
+  }
   canvas {
   
     position: absolute;
