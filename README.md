@@ -62,7 +62,7 @@ storyline code
 - [LinkedIn](https://www.linkedin.com/in/banhtmai/)
 - [Portfolio]( )
 - [Highlighted-Work]( )
-- email: 
+- email: maibanh1996@gmail.com
 
 ### [Ernie Urzua](https://github.com/ErnestUrzua)
 - [LinkedIn](https://www.linkedin.com/in/ernesturzua/)
